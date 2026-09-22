@@ -26,15 +26,23 @@ vector_singulete <- c(TRUE)
 
 c("hola a todos") -> vector_contrario
 
+#### matrices
 
+mi_primer_matriz = list(c(1,2,4),
+                        c(-3,5,8),
+                        c(-2,1,1)
+                        )
 
+otra_matriz = list(c("hola","adios"),
+                   c("a","b"),
+                   c("10","11")
+)
+                   
+### Dataframes
 
-
-
-
-
-
-
-
-
-
+mi_primer_dataframe = list(c("Luis","Pablo","Jimena"),
+                           c(16,18,18)
+                           )
+ 
+ 
+  
