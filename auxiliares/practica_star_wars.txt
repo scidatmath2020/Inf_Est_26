@@ -1,0 +1,57 @@
+1. Filtra únicamente a los personajes cuya faccion sea "Rebelde".
+
+2. Filtra a los personajes que sean sensibles a la Fuerza, es decir, aquellos con sensible_fuerza == TRUE.
+
+3. Obtén los personajes cuya altura_cm sea mayor a 180.
+
+4. Filtra a los personajes que pertenezcan a la facción "Jedi" y que además tengan más de 20 misiones.
+
+5. Obtén los personajes cuya recompensa_creditos sea mayor a 10000 o cuya edad_aprox sea mayor a 100.
+
+6. Filtra a los personajes que no sean humanos.
+
+7. Filtra a los personajes cuya especie sea "Humano" y cuya edad_aprox esté entre 20 y 40 años.
+
+8. Obtén los personajes que pertenezcan a cualquiera de las siguientes facciones:
+
+"Rebelde", "Jedi" o "Resistencia".
+
+9. Crea una nueva columna llamada altura_m que convierta altura_cm a metros.
+
+10. Crea una columna llamada creditos_por_mision calculada como:
+
+creditos_por_mision = creditos_ganados / misiones
+
+11. Crea una columna llamada peso_por_cm calculada como:
+
+peso_por_cm = peso_kg / altura_cm
+
+12. Crea una columna llamada nivel_experiencia que tome los siguientes valores:
+
+"Principiante" si misiones < 15
+
+"Experimentado" si misiones está entre 15 y 25
+
+"Veterano" si misiones > 25
+
+13. Crea una columna llamada tipo_fuerza que tome el valor:
+
+"Usuario de la Fuerza" si sensible_fuerza == TRUE
+
+"Sin Fuerza" si sensible_fuerza == FALSE
+
+14. Crea una columna llamada imc usando:
+
+altura_m = altura_cm / 100
+
+imc = peso_kg / altura_m^2 (esto no tiene sentido para androides ni cyborgs)
+
+Después filtra únicamente a los personajes humanos cuyo imc sea mayor a 25.
+
+15. Crea la columna creditos_por_mision y después obtén únicamente a los personajes que:
+
+- tengan más de 20 misiones,
+- hayan ganado más de 50000 créditos,
+- y tengan creditos_por_mision mayor a 3000.
+
+Ordena el resultado de mayor a menor según creditos_por_mision.
